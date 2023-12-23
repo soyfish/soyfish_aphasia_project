@@ -1,0 +1,79 @@
+<!-- Aphasia 1 - Beta Version -->
+<html>
+    <style>
+        img 
+        {
+            border-radius: 25px;
+            width:95%;
+            height:auto;
+        }
+        button
+        {
+            width:40%;
+            height:auto;
+            color:black;
+            background:white;
+            font-size:60px;
+            padding:5%;
+            border:0px;
+        }
+        div
+        {
+            font-size:50px;
+        }
+    </style>
+    <script>
+        const images = [];
+            images.push(
+                "<img src='https://i.ibb.co/0hsvpXM/apple.png' onclick=getElementById('answer').innerHTML='Apple'>", "<img src='https://i.ibb.co/swXJW67/orange.png'     onclick=getElementById('answer').innerHTML='Orange'>","<img src='https://i.ibb.co/TYHqkrv/bananna.png'     onclick=getElementById('answer').innerHTML='Bananna'>","<img src='https://i.ibb.co/CQt7nQr/grapes.png'     onclick=getElementById('answer').innerHTML='Grapes'>","<img src='https://i.ibb.co/8540bNY/watermelon.png'     onclick=getElementById('answer').innerHTML='Watermelon'>",
+                "<img src='https://i.ibb.co/hFxf5SM/cherry.png' onclick=getElementById('answer').innerHTML='Cherry'>",
+                "<img src='https://i.ibb.co/kKMxbcj/pear.png' onclick=getElementById('answer').innerHTML='Pear'>",
+                "<img src='https://i.ibb.co/jz0nQv2/pineapple.png' onclick=getElementById('answer').innerHTML='Pineapple'>",
+                "<img src='https://i.ibb.co/Jx4VRY1/mango.png' onclick=getElementById('answer').innerHTML='Mango'>",
+                "<img src='https://i.ibb.co/6BYQ8sP/strawberry.png' onclick=getElementById('answer').innerHTML='Strawberry'>"
+            );
+            var index=-1;
+            function insertImage() 
+            {      
+                if (index < images.length-1)
+                {
+                    index++;
+                    document.getElementById('answer').innerHTML=' ';
+                }
+                else
+                {
+                    index = 0;
+                    document.getElementById('answer').innerHTML=' ';                  
+                }
+                document.getElementById('image').innerHTML=images[index];
+            }
+            function pinsertImage() 
+            {   
+                if (index > 0)
+                {
+                    index--;
+                    document.getElementById('answer').innerHTML=' ';
+                }
+                else
+                {
+                    index = images.length-1;
+                    document.getElementById('answer').innerHTML=' ';                  
+                }
+                document.getElementById('image').innerHTML=images[index];
+            }
+    </script>
+    <head>
+        <title>Aphasia Beta</title>
+    </head>
+    <body onload="insertImage()">
+        <br>
+        <center>
+            <button id='button' type='button' onclick='pinsertImage()'>⬅️</button>
+            <button id='button' type='button' onclick='insertImage()' style='margin-left:10%'>➡️</button>
+            <br>
+            <br>
+            <div id='image'></div>
+            <div id='answer'></div>
+        </center>
+    </body>
+</html>
