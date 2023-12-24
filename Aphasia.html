@@ -9,7 +9,7 @@
         }
         button
         {
-            width:40%;
+            width:20%;
             height:auto;
             color:black;
             background:white;
@@ -25,7 +25,11 @@
     <script>
         const images = [];
             images.push(
-                "<img src='https://i.ibb.co/0hsvpXM/apple.png' onclick=getElementById('answer').innerHTML='Apple'>", "<img src='https://i.ibb.co/swXJW67/orange.png'     onclick=getElementById('answer').innerHTML='Orange'>","<img src='https://i.ibb.co/TYHqkrv/bananna.png'     onclick=getElementById('answer').innerHTML='Bananna'>","<img src='https://i.ibb.co/CQt7nQr/grapes.png'     onclick=getElementById('answer').innerHTML='Grapes'>","<img src='https://i.ibb.co/8540bNY/watermelon.png'     onclick=getElementById('answer').innerHTML='Watermelon'>",
+                "<img src='https://i.ibb.co/0hsvpXM/apple.png'>",
+                "<img src='https://i.ibb.co/swXJW67/orange.png'     onclick=getElementById('answer').innerHTML='Orange'>",
+                "<img src='https://i.ibb.co/TYHqkrv/bananna.png'     onclick=getElementById('answer').innerHTML='Bananna'>",
+                "<img src='https://i.ibb.co/CQt7nQr/grapes.png'     onclick=getElementById('answer').innerHTML='Grapes'>",
+                "<img src='https://i.ibb.co/8540bNY/watermelon.png'     onclick=getElementById('answer').innerHTML='Watermelon'>",
                 "<img src='https://i.ibb.co/hFxf5SM/cherry.png' onclick=getElementById('answer').innerHTML='Cherry'>",
                 "<img src='https://i.ibb.co/kKMxbcj/pear.png' onclick=getElementById('answer').innerHTML='Pear'>",
                 "<img src='https://i.ibb.co/jz0nQv2/pineapple.png' onclick=getElementById('answer').innerHTML='Pineapple'>",
@@ -61,14 +65,32 @@
                 }
                 document.getElementById('image').innerHTML=images[index];
             }
+            function playAnswer()
+            {
+                if (index == 0)
+                {                    
+                    const audio0 = new Audio("auto/Apple.wav");
+                    audio0.play();
+                }
+                else if (index == 1)
+                {
+                    const audio1 = new Audio("audio/Orange.wav");
+                    audio1.play();
+                }
+            }
     </script>
     <head>
         <title>Aphasia Beta</title>
     </head>
     <body onload="insertImage()">
+ 
+        
+        <div><iframe width="300" height="60" src="https://vocaroo.com/embed/1mykE7cyxSRU?autoplay=0" frameborder="0" allow="autoplay"></iframe><br><a href="https://voca.ro/1mykE7cyxSRU" title="Vocaroo Voice Recorder" target="_blank">View on Vocaroo &gt;&gt;</a></div>
+        
         <br>
         <center>
             <button id='button' type='button' onclick='pinsertImage()'>⬅️</button>
+            <button id='button' type='button' onclick='playAnswer()' style='margin-left:10%'>🗣️</button>
             <button id='button' type='button' onclick='insertImage()' style='margin-left:10%'>➡️</button>
             <br>
             <br>
