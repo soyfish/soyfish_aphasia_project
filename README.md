@@ -1,2 +1,1 @@
-# aphasia_project_1_soyfish
-An aphasia project using html, css, javascript.
+This is part of my work portfolio. It's a HTML / Javascript webpage that is designed to assist people who are recovering from Aphasia. Guess the picture then click the talking head button to hear the answer. This program is designed to be all visual with no words.
