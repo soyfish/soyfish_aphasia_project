@@ -4,8 +4,8 @@ This program does not use any words as we need to focus on the images to keep th
 
 Changes to add:
 1. Dynamic to different screen sizes
-2. Clean up the presentation a bit
-3. Clean up and comment the code as needed
+2. Clean up the webpage GUI
+3. Clean up the code / comments / file structure
 
 Usage:
 1. Try to guess the image eg. Apple
