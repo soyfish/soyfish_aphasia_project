@@ -7,9 +7,10 @@ Changes to add:
 2. Clean up the webpage GUI
 3. Clean up the code / comments / file structure
 
-Usage:
-1. Try to guess the image eg. Apple
-2. Click the talking head icon to hear the answer
-3. Click the left button to move to the next image
-4. Click the right butto to move to the previous image
-
+How someone with Asphasia would use the webpage:
+1. Try to identify the image and say it out loud eg. "Apple"
+2. Click on the "talking head" to hear the answer
+3. Click the "left button" to move to the next image
+4. Click the "right button" to move to the previous image
+5. Repeat the exercise often and see if you can improve each day
+6. You got this!
